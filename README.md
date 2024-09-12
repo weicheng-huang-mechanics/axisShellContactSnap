@@ -5,6 +5,8 @@ This project focused on the contact-induced snap-through of an axisymmetric shel
 
 To run this code, you should have a Linux Ubuntu system
 
+# Add package repository
+
 0. Update
 sudo apt-get update
 
@@ -23,24 +25,13 @@ https://gitlab.com/libeigen/eigen/-/releases/3.4.0
 5. Move eigen3 to /usr/local/include
 sudo mv 'your eigen' /usr/local/include
 
-6. Install mkl
-
-Installation:
-1. Use following commands
-
-# Add package repository
+6. Install ml
 sudo apt-get install -y gpg-agent wget
 wget -qO - https://repositories.intel.com/graphics/intel-graphics.key | sudo apt-key add -
 sudo apt-add-repository 'deb [arch=amd64] https://repositories.intel.com/graphics/ubuntu focal main'
 
-# Install run-time packages
 sudo apt-get update
 sudo apt-get install intel-opencl-icd intel-level-zero-gpu level-zero intel-media-va-driver-non-free libmfx1
-
-# OPTIONAL: Install developer packages
-sudo apt-get install libigc-dev intel-igc-cm libigdfcl-dev libigfxcmrt-dev level-zero-dev
-stat -c "%G" /dev/dri/render*
-... # for GPU (not required)
 
 cd /tmp
 wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
