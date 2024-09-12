@@ -1,4 +1,6 @@
 # Overview
+This project involves a dynamic simulation of an axisymmetric shell jumper.
+
 <br/><img src='demo.gif' width="600">
 
 # Make 
