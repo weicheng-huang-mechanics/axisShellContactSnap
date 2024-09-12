@@ -31,7 +31,7 @@ https://gitlab.com/libeigen/eigen/-/releases/3.4.0
 
 sudo mv 'your eigen' /usr/local/include
 
-6. Install ml
+6. Install mkl
 
 sudo apt-get install -y gpg-agent wget
 
@@ -59,7 +59,7 @@ sudo apt install intel-basekit
 
 sudo apt install intel-hpckit(not required)
 
-Must run this cmd everytime for a new terminal
+7. Must run this cmd everytime for a new terminal
 
 source /opt/intel/oneapi/setvars.sh
 
