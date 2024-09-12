@@ -1,5 +1,5 @@
 # Overview
-This project involves a dynamic simulation of an axisymmetric shell jumper.
+This project focused on the contact-induced snap-through of an axisymmetric shell.
 
 <br/><img src='demo2.gif' width="600">
 
