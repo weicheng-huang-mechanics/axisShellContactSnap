@@ -8,6 +8,7 @@ To run this code, you should have a Linux Ubuntu system
 # Add package repository
 
 0. Update
+
 sudo apt-get update
 
 1. Install lapack
