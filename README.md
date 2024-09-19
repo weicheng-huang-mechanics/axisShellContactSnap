@@ -9,30 +9,43 @@ To run this code, you should have a Linux Ubuntu system
 
 0. Update
 
+'''
 sudo apt-get update
+'''
 
 1. Install lapack
 
+'''
 sudo apt-get install libblas-dev liblapack-dev
+'''
 
 2. Install gfortran
 
+'''
 sudo apt-get install gfortran
+'''
 
 3. Install OpenGL
 
+'''
 sudo apt-get install freeglut3-dev
+'''
 
 4. Download eigen3
 
+'''
 https://gitlab.com/libeigen/eigen/-/releases/3.4.0
+'''
 
 5. Move eigen3 to /usr/local/include
 
+'''
 sudo mv 'your eigen' /usr/local/include
+'''
 
 6. Install mkl
 
+'''
 sudo apt-get install -y gpg-agent wget
 
 wget -qO - https://repositories.intel.com/graphics/intel-graphics.key | sudo apt-key add -
@@ -59,12 +72,23 @@ sudo apt install intel-basekit
 
 sudo apt install intel-hpckit(not required)
 
+'''
+
 7. Must run this cmd everytime for a new terminal
 
 source /opt/intel/oneapi/setvars.sh
 
 # Make 
+
+'''
+source /opt/intel/oneapi/setvars.sh
+
 g++ -I /usr/local/include/eigen-3.4.0/ main.cpp world.cpp setInput.cpp timeStepper.cpp inertialForce.cpp externalGravityForce.cpp dampingForce.cpp elasticStretchingForce.cpp elasticBendingForce.cpp elasticPlate.cpp externalPressureForce.cpp elasticBoundaryForce.cpp externalContactForce.cpp -lGL -lglut -lGLU -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -llapack -lgfortran -fopenmp -lpthread -lm -Ofast -o simDER
 
+'''
+
 # Run 
+
+'''
 ./simDER option.txt
+'''
