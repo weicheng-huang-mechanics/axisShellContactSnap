@@ -7,6 +7,8 @@ To run this code, you should have a Linux Ubuntu system
 
 # Installation
 
+0. Update
+
 ```bash
    sudo apt-get update
    ```
