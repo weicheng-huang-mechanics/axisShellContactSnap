@@ -5,7 +5,7 @@ This project focused on the contact-induced snap-through of an axisymmetric shel
 
 To run this code, you should have a Linux Ubuntu system
 
-# Installation
+# Prerequisites
 
 0. Update
 
@@ -75,7 +75,7 @@ sudo apt install intel-basekit
 sudo apt install intel-hpckit(not required)
 ```
 
-# Make 
+# Installation 
 
 ```bash
 source /opt/intel/oneapi/setvars.sh
