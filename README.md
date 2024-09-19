@@ -9,13 +9,13 @@ To run this code, you should have a Linux Ubuntu system
 
 0. Update
 
-'''
+'''bash
 sudo apt-get update
 '''
 
 1. Install lapack
 
-'''
+'''bash
 sudo apt-get install libblas-dev liblapack-dev
 '''
 
