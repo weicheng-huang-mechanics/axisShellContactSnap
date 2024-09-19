@@ -5,13 +5,12 @@ This project focused on the contact-induced snap-through of an axisymmetric shel
 
 To run this code, you should have a Linux Ubuntu system
 
-# Add package repository
+# Installation
 
-0. Update
-
-'''bash
-sudo apt-get update
-'''
+```bash
+   sudo apt-get update
+sudo apt-get install libblas-dev liblapack-dev
+   ```
 
 1. Install lapack
 
